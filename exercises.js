@@ -27,7 +27,7 @@ console.log(books);
 
     - add a key named `name` and set it to a string value of your choice
     - add a key named `age` and set it to a number value of your choice
-    - add a key named `vegeterian` and set it to a boolean value of your choice
+    - add a key named `vegetarian` and set it to a boolean value of your choice
     - add a key named `color` and set it to an array with two string elements in it
     - add a key named `speak` which will be a method that return a string "bark!";
 
@@ -37,7 +37,15 @@ console.log(books);
  "My dog `name` is `age` year old and likes to `speak`."
 */
 
-
+var dog =
+{
+  name:"spot",
+  age: 8,
+  vegeterian: false,
+  color: ["black" + "white"],
+  speak: "bark!"
+};
+console.log("My dog " + dog.name + " is " + dog.age + " years old and likes to " +dog.speak);
 
 //An empty object
 
@@ -52,7 +60,13 @@ console.log(books);
 
   Console.log the object.
 */
+var kicks = {};
+  kicks.brand = "shoe";
+  kicks.color = "red";
+  kicks.size = "10.5";
+  kicks.buy = "Hell Yeah!";
 
+console.log(kicks);
 
 /*
 
@@ -62,8 +76,12 @@ console.log(books);
             - add a property named `size` and set it to a number value between `0` and `20`.
             - add a property named `contents` and set it to be an empty array.
 */
+var plainBox = {};
+plainBox.color = "blue";
+plainBox.size = 20;
+plainBox.contents = {};
 
-
+console.log(plainBox);
 /*
 5. Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
             - add a key named `model` and set its value to the name of an American car manufacturer.
@@ -72,7 +90,14 @@ console.log(books);
             - add a key named `driver` and set it to be `null`.
             - add a key named `passengers` and set it to be an empty array.
 */
-
+var stockCar = {
+model: "Ford",
+year: "2015",
+automaticTransmission: true,
+driver: null,
+passengers: {}
+};
+console.log(stockCar);
 
 /*
 
@@ -205,7 +230,7 @@ console.log(books);
     Example of a loaded Car:
 
     # Display passengers
-        Delcare a function named `displayPassengers` and set one parameter which will be a **car**. This function should print out each passenger's name and age one line at a time.
+        Declare a function named `displayPassengers` and set one parameter which will be a **car**. This function should print out each passenger's name and age one line at a time.
 
     example output:
         'Jon, age 19, is riding dirty!'
